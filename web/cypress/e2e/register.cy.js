@@ -28,9 +28,16 @@ describe('Cadastro de Orfanatos', () => {
 
       cy.get('#description').type(orphanage.description)
 
+      // force true will force the cypress to take an element that is not visible.
+      cy.get('input[type=file]')
+        .selectFile('cypress/fixtures/images/kids-playground-1.png', {force: true})
+
       cy.get('#opening_hours').type(orphanage.opening_hours)
 
       cy.contains('button', 'Sim').click
+
+      // dot before a .class name
+      cy.get('.save-button').click()
   })
 })
 
