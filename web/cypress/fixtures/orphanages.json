@@ -1,0 +1,53 @@
+{
+    "create": {
+        "name": "Sunny Days Orphanage",
+        "description": "Providing a loving and nurturing environment for children of all ages.",
+        "opening_hours": "Monday to Friday, 9 AM - 5 PM",
+        "open_on_weekends": "Não"
+    },
+    "Other1": {
+        "name": "Hope Haven",
+        "description": "A safe haven for children in need, offering educational and recreational activities.",
+        "opening_hours": "Monday to Saturday, 8 AM - 6 PM"
+    },
+    "Other2": {
+        "name": "Little Angels Home",
+        "description": "Dedicated to the care and well-being of orphaned and abandoned children.",
+        "opening_hours": "Everyday, 8 AM - 8 PM"
+    },
+    "Other3": {
+        "name": "Bright Futures Orphanage",
+        "description": "Focused on providing education and personal development opportunities.",
+        "opening_hours": "Monday to Friday, 10 AM - 4 PM"
+    },
+    "Other4": {
+        "name": "Children's Joy Home",
+        "description": "Ensuring every child receives the love, care, and attention they deserve.",
+        "opening_hours": "Monday to Sunday, 7 AM - 7 PM"
+    },
+    "Other5": {
+        "name": "Safe Harbor Orphanage",
+        "description": "Offering a secure and supportive environment for children to thrive.",
+        "opening_hours": "Monday to Friday, 9 AM - 6 PM"
+    },
+    "Other6": {
+        "name": "New Beginnings",
+        "description": "Helping children start anew with a focus on emotional and social growth.",
+        "opening_hours": "Monday to Friday, 9 AM - 5 PM"
+    },
+    "Other7": {
+        "name": "Peaceful Place Orphanage",
+        "description": "Providing a peaceful and caring atmosphere for orphaned children.",
+        "opening_hours": "Everyday, 8 AM - 6 PM"
+    },
+    "Other8": {
+        "name": "Happy Hearts Home",
+        "description": "Committed to nurturing happy and healthy children in a family-like setting.",
+        "opening_hours": "Monday to Sunday, 9 AM - 5 PM"
+    },
+    "Other9": {
+        "name": "Rainbow Orphanage",
+        "description": "A colorful and vibrant place where children can grow and learn.",
+        "opening_hours": "Monday to Saturday, 8 AM - 6 PM"
+    }
+}
