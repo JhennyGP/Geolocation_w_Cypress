@@ -3,7 +3,11 @@
         "name": "Sunny Days Orphanage",
         "description": "Providing a loving and nurturing environment for children of all ages.",
         "opening_hours": "Monday to Friday, 9 AM - 5 PM",
-        "open_on_weekends": "Não"
+        "open_on_weekends": "Não",
+        "position": {
+            "latitude": -23.9535,
+            "longitude": -46.3342
+        }
     },
     "Other1": {
         "name": "Hope Haven",

@@ -10,13 +10,25 @@ describe('Cadastro de Orfanatos', () => {
       .should('be.visible')
       .should('have.text', 'Cadastro')
 
-      cy.setMapPosition(orphanage.position)
+      // option with id
+      // cy.get('#name')
+      //   .type('Orfanato Crianca Feliz')
+
+      // option with label
+      // cy.get('label', 'Nome')
+      // .parent()
+      // .find('input').type('Orfanato Crianca Feliz')
 
       cy.get('input[name=name]')
       .type(orphanage.name)
 
+      // cy.get('#description').type('Descricao do Orfanato')
+
+      // cy.get('#opening_hours').type('Das 8h as 17h')
+
       cy.get('#description').type(orphanage.description)
 
+      // force true will force the cypress to take an element that is not visible.
       cy.get('input[type=file]')
         .selectFile('cypress/fixtures/images/kids-playground-1.png', {force: true})
 
@@ -24,15 +36,17 @@ describe('Cadastro de Orfanatos', () => {
 
       cy.contains('button', 'Sim').click
 
+      // dot before a .class name
       cy.get('.save-button').click()
   })
 })
 
 
-Cypress.Commands.add('setMapPosition', (position) =>{
-  window.localStorage.setItem("hope-qa:latitude", position.latitude);
-  window.localStorage.setItem("hope-qa:longitude", position.longitude);
-})
+
+
+
+
+
 
 
 
