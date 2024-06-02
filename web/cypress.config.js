@@ -1,26 +1,16 @@
 const { defineConfig } = require("cypress");
-const { cypressBrowserPermissionsPlugin } = require("cypress-browser-permissions")
+const { configurePlugin } = require ("cypress-mongodb");
 
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      config = cypressBrowserPermissionsPlugin(on, config)
-
-      return config
+      configurePlugin(on);
     },
-    //Important to set this when use location on cypress
-      "env": {
-        "browserPermissions": {
-          "notifications": "allow",
-          "geolocation": "allow",
-          "camera": "block",
-          "microphone": "block",
-          "images": "allow",
-          "javascript": "allow",
-          "popups": "ask",
-          "plugins": "ask",
-          "cookies": "allow"
-        }
+    env: {
+      mongodb: {
+        uri: 'mongodb+srv://qax:xperience@clusterhope.7csxy4y.mongodb.net/HopeDB?retryWrites=true&w=majority&appName=ClusterHope',
+        database: 'HopeDB'
       }
+    }
   },
 });
