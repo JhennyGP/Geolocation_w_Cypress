@@ -1,11 +1,13 @@
 import data from '../fixtures/orphanages.json'
-import { faker } from '@faker-js/faker'
+// import { faker } from '@faker-js/faker'
 
 describe('Cadastro de Orfanatos', () => {
   it('Deve cadastrar um novo orfanato', () => {
     cy.visit('http://localhost:3000/orphanages/create/')
 
     const orphanage = data.create
+
+    cy.deleteMany({name: orphanage.name}, {collection: 'orphanages'})
 
     cy.get('legend')
       .should('be.visible')
@@ -14,7 +16,8 @@ describe('Cadastro de Orfanatos', () => {
     cy.setMapPosition(orphanage.position)
 
     cy.get('input[name=name]')
-      .type(orphanage.name + ' ' + faker.company.name())
+      .type(orphanage.name)
+      // .type(orphanage.name + ' ' + faker.company.name())
 
     cy.get('#description').type(orphanage.description)
 
